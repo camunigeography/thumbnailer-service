@@ -1,0 +1,14 @@
+<?php
+
+# Settings
+$settings = array (
+	'imageStoreRoot'			=> '/path/to/image-store',
+	'thumbnailsDirectory'		=> '/path/to/image-store/thumbnails',
+	'administratorEmail'		=> 'webmaster@example.com',
+);
+
+# Load and run the application with the above settings
+require_once (__DIR__ . '/vendor/autoload.php');
+new thumbnailerService ($settings);
+
+?>
